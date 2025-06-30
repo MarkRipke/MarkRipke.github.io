@@ -1,0 +1,159 @@
+/* Animaciones Base */
+@keyframes wave {
+    0%, 60%, 100% {
+        transform: scaleY(0.6);
+    }
+    30% {
+        transform: scaleY(1.2);
+    }
+}
+
+/* Nuevas Animaciones */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes flipIn {
+    from {
+        transform: perspective(400px) rotateY(90deg);
+        opacity: 0;
+    }
+    to {
+        transform: perspective(400px) rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Clases de Animación Mejoradas */
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeDown 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeLeft 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeRight 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Nuevas Clases de Animación */
+.animate-slide {
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.animate-flip {
+    animation: flipIn 0.8s ease-out forwards;
+    backface-visibility: visible !important;
+}
+
+.animate-zoom {
+    animation: zoomIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.animate-bounce {
+    animation: bounce 1s ease infinite;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
+/* Keyframes */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1.02);
+    }
+}
+
+@keyframes fadeDown {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1.02);
+    }
+}
+
+@keyframes fadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1.02);
+    }
+}
+
+@keyframes fadeRight {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1.02);
+    }
+}
+
+/* Scroll Animations mejoradas */
+[data-animate] {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+[data-animate="up"] {
+    transform: translateY(40px) scale(0.95);
+}
+
+[data-animate="down"] {
+    transform: translateY(-40px) scale(0.95);
+}
+
+[data-animate="left"] {
+    transform: translateX(-40px) scale(0.95);
+}
+
+[data-animate="right"] {
+    transform: translateX(40px) scale(0.95);
+}
+
+[data-animate].animated {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Ripke</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1565C0; /* Azul principal */
+            --secondary-color: #D32F2F; /* Rojo vibrante */
+            --accent-color: #42A5F5; /* Azul brillante */
+            --light-color: #F5F7FA; /* Gris claro */
+            --dark-color: #0D47A1; /* Azul oscuro */
+            --text-color: #263238; /* Gris oscuro */
+            --light-text: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo animate-left">
+                <h1>Mark <span>Ripke</span></h1>
+                <p class="tagline">Restaurante</p>
+            </div>
+            <nav class="nav animate-right">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="menu.html">Carta</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content animate-up">
+                <h2>Descubre acerca de nuestro restaurante</h2>
+                <p>Texto</p>
+                <a href="menu.html" class="btn pulse">Ver nuestra carta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-title animate-up">
+                <h2>Nuestro Restaurante</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-left">
+                    <p>Mucho texto.</p>
+                    <p>Muchísimo más texto.</p>
+                </div>
+                <div class="about-image animate-right">
+                    <img src="images/exterior.jpg" alt="Exterior del restaurante" class="img-zoom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title animate-up">
+                <h2>Nuestros Platos destacados</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-up delay-1">
+                    <img src="images/dish1.jpg" alt="Entrecot">
+                    <div class="overlay">
+                        <h3>Entrecot</h3>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up delay-2">
+                    <img src="images/dish2.jpg" alt="Arroces">
+                    <div class="overlay">
+                        <h3>Arroces</h3>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up delay-3">
+                    <img src="images/dish3.jpg" alt="Postres">
+                    <div class="overlay">
+                        <h3>Postres</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card animate-up">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Dirección</h3>
+                    <p>Carrer Pare Damià,<br> 46183 Valencia</p>
+                </div>
+                <div class="info-card animate-up delay-1">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horario</h3>
+                    <p>Lunes a Jueves: 8:30 - 20:30<br>Viernes: 8:30 - 23:30<br>Sábados: 8:30 - 17:00<br>Domingos: Cerrado</p>
+                </div>
+                <div class="info-card animate-up delay-2">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contacto</h3>
+                    <p>+34 666 83 20 33<br>mark_ripke@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mark <span>Ripke</span></h2>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/markcristoph/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mark Ripke. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

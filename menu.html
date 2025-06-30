@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta | Mark Ripke</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1565C0;
+            --secondary-color: #D32F2F;
+            --accent-color: #42A5F5;
+            --light-color: #F5F7FA;
+            --dark-color: #0D47A1;
+            --text-color: #263238;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo animate-left">
+                <h1>Mark <span>Ripke</span></h1>
+            </div>
+            <nav class="nav animate-right">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="menu.html" class="active">Carta</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content animate-up">
+                <h2>Nuestra Carta</h2>
+                <p>Descubre nuestros platos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-tabs animate-up">
+                <button class="tab-btn active" data-category="tapas">Tapas</button>
+                <button class="tab-btn" data-category="carnes">Carnes</button>
+                <button class="tab-btn" data-category="pescados">Pescados</button>
+                <button class="tab-btn" data-category="bocadillos">Bocadillos</button>
+                <button class="tab-btn" data-category="sandwiches">Sandwiches</button>
+                <button class="tab-btn" data-category="postres">Postres</button>
+                <button class="tab-btn" data-category="bebidas">Bebidas</button>
+            </div>
+
+            <!-- Tapas -->
+            <div class="menu-category active" id="tapas">
+                <div class="section-title">
+                    <h2>Tapas</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Anchoas</h3>
+                            <span class="price">und. 2,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Croquetón ibérico</h3>
+                            <span class="price">und. 1,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Croquetón Pollo</h3>
+                            <span class="price">und. 1,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Zamburinas</h3>
+                            <span class="price">und. 2,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Bravas</h3>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Morro de cerdo</h3>
+                            <span class="price">5,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Mordilla de Burgos</h3>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Delicias de pollo</h3>
+                            <span class="price">6,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Puntilla</h3>
+                            <span class="price">6,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Calamares Andaluza</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tellinas</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Gambas al ajillo</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Surtido de ibéricos</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Jamón y queso</h3>
+                            <span class="price">8,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Sepia plancha</h3>
+                            <span class="price">9,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Verduras a la plancha</h3>
+                            <span class="price">10,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carnes -->
+            <div class="menu-category" id="carnes">
+                <div class="section-title">
+                    <h2>Carnes</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Pechuga a la plancha</h3>
+                            <span class="price">6,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Secreto a la parrilla</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Cordon bleu</h3>
+                            <span class="price">8,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Entrecot</h3>
+                            <span class="price">12,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pescados -->
+            <div class="menu-category" id="pescados">
+                <div class="section-title">
+                    <h2>Pescados</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Merluza a la plancha</h3>
+                            <span class="price">7,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Brandada de bacalao</h3>
+                            <span class="price">8,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Ventresca de atún</h3>
+                            <span class="price">10,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Lubina a la parrilla</h3>
+                            <span class="price">10,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Crepe de marisco</h3>
+                            <span class="price">10,00 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bocadillos -->
+            <div class="menu-category" id="bocadillos">
+                <div class="section-title">
+                    <h2>Bocadillos</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Tortilla de patata</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Jamón a la catalana</h3>
+                            <span class="price">4,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Jamón y queso</h3>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Atún con tomate</h3>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Lomo con queso</h3>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Beicon con queso</h3>
+                            <span class="price">5,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Almussafes</h3>
+                            <span class="price">5,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Pechuga con queso</h3>
+                            <span class="price">5,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Delicias de pollo</h3>
+                            <span class="price">5,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tortillas variadas</h3>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chivito de lomo</h3>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chivito de pechuga</h3>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Entrecot</h3>
+                            <span class="price">5,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Brascada de entrecot</h3>
+                            <span class="price">6,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Calamares</h3>
+                            <span class="price">6,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Anchoas</h3>
+                            <span class="price">0,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Complemento extra</h3>
+                            <span class="price">0,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sandwiches -->
+            <div class="menu-category" id="sandwiches">
+                <div class="section-title">
+                    <h2>Sandwiches</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Sandwich mixto</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Sandwich vegetal</h3>
+                            <span class="price">4,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Complemento extra</h3>
+                            <span class="price">0,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postres -->
+            <div class="menu-category" id="postres">
+                <div class="section-title">
+                    <h2>Postres</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Piña</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Tarta de queso</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Tarta banoffee</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Yogurt griego</h3>
+                            <span class="price">3,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-category" id="bebidas">
+                <div class="section-title">
+                    <h2>Bebidas</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item animate-up">
+                        <div class="item-header">
+                            <h3>Agua grande 1,5 L</h3>
+                            <span class="price">1,50 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-1">
+                        <div class="item-header">
+                            <h3>Agua pequeña 0,5 L</h3>
+                            <span class="price">1,00 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item animate-up delay-2">
+                        <div class="item-header">
+                            <h3>Refresco</h3>
+                            <span class="price">1,80 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Caña</h3>
+                            <span class="price">1,30 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Doble</h3>
+                            <span class="price">1,80 €</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Copa de vino</h3>
+                            <span class="price">2,50 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mark <span>Ripke</span></h2>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/markcristoph/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mark Ripke. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
