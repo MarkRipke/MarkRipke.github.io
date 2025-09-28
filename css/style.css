@@ -685,9 +685,24 @@ img {
     border: 0;
 }
 
-/* Hacemos que la sección delivery sea responsive */
 @media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    /* ---- MODIFICACIÓN AQUÍ ---- */
     .delivery-content {
         flex-direction: column-reverse; /* El texto aparecerá debajo del vídeo en móvil */
+    }
+    
+    /* AÑADE ESTAS LÍNEAS */
+    .delivery-text,
+    .delivery-video {
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        flex: none;  /* Desactiva el comportamiento flex para que no colapse la altura */
     }
 }
