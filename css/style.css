@@ -635,4 +635,59 @@ img {
     30% {
         transform: scaleY(1);
     }
+
+}
+
+/* Delivery Section */
+.delivery {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.delivery-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.delivery-text {
+    flex: 1;
+}
+
+.delivery-text h3 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.delivery-text p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.delivery-video {
+    flex: 1;
+    position: relative;
+    /* Proporción 16:9 para el video */
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.delivery-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Hacemos que la sección delivery sea responsive */
+@media (max-width: 992px) {
+    .delivery-content {
+        flex-direction: column-reverse; /* El texto aparecerá debajo del vídeo en móvil */
+    }
 }
